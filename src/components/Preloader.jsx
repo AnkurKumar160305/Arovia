@@ -1,6 +1,6 @@
-function Preloader() {
+function Preloader({ loaded }) {
   return (
-    <div className="preloader" data-preloader>
+    <div className={`preloader ${loaded ? 'loaded' : ''}`} data-preloader>
       <div className="circle"></div>
     </div>
   );

@@ -82,7 +82,7 @@ function HomePage() {
 
   return (
     <>
-      {loading && <Preloader />}
+      <Preloader loaded={!loading} />
       <Header navActive={navActive} setNavActive={setNavActive} />
       <main>
         <article>
