@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage } from '../../context/LanguageContext';
-import DadiChatBot from '../ChatBot/DadiChatBot';
+import HealthcareTriageBot from '../ChatBot/HealthcareTriageBot';
 import CreateDoctorModal from './CreateDoctorModal';
 import './Dashboard.css';
 
@@ -91,7 +91,7 @@ function AdminDashboard() {
           </div>
         </div>
         
-        <DadiChatBot />
+        <HealthcareTriageBot />
       </div>
       
       {showCreateDoctorModal && (
